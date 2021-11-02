@@ -21,6 +21,9 @@ export const getEtherscanLink = (hash : string, type : string, chainId : number)
 		case 5:
 			baseURL = 'https://goerli.etherscan.io'
 			break;
+		case 1000:
+			baseURL = 'http://168.119.138.91:8545'
+			break;
 	}
 	if(type === 'tx') {
 		return `${baseURL}/tx/${hash}`
